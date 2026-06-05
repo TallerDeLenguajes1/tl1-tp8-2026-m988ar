@@ -8,7 +8,7 @@ namespace Tareas
 
         private int duracion;
 
-        private bool realizada;
+        private int realizada;
 
         public int TareaID { get => tareaID; set => tareaID = value; }
         public string Descripcion { get => descripcion; set => descripcion = value; }
@@ -19,6 +19,14 @@ namespace Tareas
             set  {if(value>=10 && value <=100){duracion = value;}}
         }
 
-        public bool Realizada { get => realizada; set => realizada = value;}
+        public int Realizada { get => realizada; set => realizada = value;}
+
+        public Tarea()
+        {
+            tareaID = 0;
+            descripcion = "@";
+            duracion = 0;
+            Realizada = 0;
+        }
     }
 }
