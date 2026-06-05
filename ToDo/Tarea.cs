@@ -1,4 +1,4 @@
-namespace Tarea
+namespace Tareas
 {
     public class Tarea
     {
@@ -8,6 +8,8 @@ namespace Tarea
 
         private int duracion;
 
+        private bool realizada;
+
         public int TareaID { get => tareaID; set => tareaID = value; }
         public string Descripcion { get => descripcion; set => descripcion = value; }
 
@@ -16,5 +18,7 @@ namespace Tarea
             get => duracion;
             set  {if(value>=10 && value <=100){duracion = value;}}
         }
+
+        public bool Realizada { get => realizada; set => realizada = value;}
     }
 }
